@@ -13,7 +13,9 @@ export default function Currencies (props) {
       ];
     
     return (
+        
         <div className="currencies">
+             <h1>Current Currrencies </h1>
             {currencies.map((coin)=> {
                 const {name, symbol} = coin;
 
@@ -23,7 +25,8 @@ export default function Currencies (props) {
                     </Link>
                 )
             })}
-            <h1>This is the Currrencies Component </h1>
+            <h1></h1>
+            <h3><Link to ='/'>Go Back</Link></h3>
         </div>
     );
 }
