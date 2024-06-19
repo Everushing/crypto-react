@@ -22,6 +22,39 @@ function Login({ onLogin }) {
       // Handle authentication errors (e.g., invalid credentials)
       setError(err.message || 'Login failed. Please try again.'); 
     }
+     
+      // 1. Basic Validation 
+      // if (!email || !password) {
+      //   setError('Please fill in all fields.');
+      //   return;
+      // }
+  
+      // 2. Send Login Request to Backend
+      // try {
+      //   const response = await fetch('/api/login', {  // Adjust your API endpoint
+      //     method: 'POST',
+      //     headers: { 'Content-Type': 'application/json' },
+      //     body: JSON.stringify({ email, password }),
+      //   });
+  
+        // if (response.ok) { // Successful login
+        //   const user = await response.json(); // Get user data from response (optional)
+          // onLogin(user); // Update authentication state (e.g., set token)
+          // navigate('/'); // Redirect to home page
+      //   } else {
+      //     const errorData = await response.json();
+      //     setError(errorData.message || 'Login failed.');
+      //   }
+      // } catch (err) {
+      //   setError('An error occurred during login.');
+        // console.error(err); // Log the error for debugging
+    //   }
+    // };
+    
+  
+    // return (
+    //   // ... (rest of the component - JSX structure is the same)
+    // );
   };
 
   return (
