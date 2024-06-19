@@ -1,0 +1,76 @@
+/* Signup.css (Black and White Theme) */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 350px; 
+    margin: 0 auto; 
+  }
+  
+  .signup-container h2 {
+    color: #000; /* Black text */
+    margin-bottom: 25px;
+  }
+  
+  .signup-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .signup-container label {
+    color: #333; /* Dark gray text */
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .signup-container input[type="email"],
+  .signup-container input[type="password"] {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+  }
+  
+  .signup-container button[type="submit"] {
+    padding: 12px 18px;
+    background-color: #000; /* Black background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .signup-container button[type="submit"]:hover {
+    background-color: #333; /* Darker black on hover */
+  }
+  
+  .signup-container p {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .signup-container a {
+    color: #000; /* Black link */
+    text-decoration: none;
+    border-bottom: 1px solid #000; /* Underline on hover */
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  .signup-container a:hover {
+    border-bottom-color: transparent;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

@@ -4,7 +4,9 @@ import Main from "./pages/Main/Main";
 import Price from "./pages/Price/Price";
 import Nav from "./components/Nav/Nav";
 import './App.css';
-import Header from "./components/Header/Header";
+import Signup from "./pages/Signup/Signup";
+import Login from "./pages/Login/Login";
+
 
 
 
@@ -23,6 +25,9 @@ function App() {
         <Route path="/currencies" element={<Currencies/>}/>
         <Route path="/prices" element={<Price/>}/>
         <Route path="/price/:symbol" element={<Price/>}/> 
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/login" element={<Login/>}/>
+
       </Routes>
     </div>
       
@@ -31,3 +36,7 @@ function App() {
 }
 
 export default App
+
+
+
+
